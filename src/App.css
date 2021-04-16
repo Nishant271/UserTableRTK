@@ -1,39 +1,45 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #151515;
+  color: aliceblue;
+}
+#title {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+#loading {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: #151515;
+  z-index: 100;
+}
+#users {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+#users td,
+#users th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#users tr:nth-child(even) {
+  background-color: #364547;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
 }
